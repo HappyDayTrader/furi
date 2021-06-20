@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "commonjs",
+    "target": "es2017",
+    "lib": [
+      "es2017",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "noImplicitAny": true,
+    "outDir": "./lib",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "files": [
+    "./lib/index.ts",
+    "./lib/furi.ts"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "furi",
+  "version": "0.1.0",
+  "description": "The Fast and Furious Node Router",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "uglifyjs": "uglifyjs ./lib/furi.js > ./lib/furi.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:rajinder_yadav/furi.git"
+  },
+  "author": "Rajinder Yadav <info@devmentor.org>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@types/core-js": "^0.9.43",
+    "@types/node": "^8.0.28",
+    "typescript": "^2.5.2"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.1.2"
+  }
+}

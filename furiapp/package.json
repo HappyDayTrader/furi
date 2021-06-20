@@ -1,0 +1,21 @@
+{
+  "name": "furiapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "typings": "index",
+  "scripts": {
+    "build": "./node_modules/typescript/bin/tsc ./benchmark_ts_app.ts",
+    "start": "node ./benchmark_app.js"
+  },
+  "author": "Rajinder Yadav <labs@devmentor.org> (http://blog.devmentor.org)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "furi": "file:furi-0.1.0.tgz"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.43",
+    "@types/node": "^8.0.30",
+    "typescript": "^2.5.2"
+  }
+}

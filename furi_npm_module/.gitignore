@@ -1,0 +1,10 @@
+build/
+node_modules/
+
+.vscode
+*.js
+*.js.map
+*.d.ts
+furi-0.1.0.tgz
+npm-debug.log
+

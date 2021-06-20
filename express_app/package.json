@@ -1,0 +1,14 @@
+{
+  "name": "express_app",
+  "version": "1.0.0",
+  "description": "Express benchmark test app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node benchmark-app.js"
+  },
+  "author": "Rajinder Yadav <labs@devmentor.org> (http://blog.devmentor.org)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

@@ -1,0 +1,14 @@
+furi.ts
+*.log
+*.tgz
+
+node_modules/
+benchmark/
+build/
+docs/
+src/
+test/
+typings/
+tsconfig.json
+typings.json
+tslint.json

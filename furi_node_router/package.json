@@ -1,0 +1,51 @@
+{
+  "name": "furi",
+  "version": "0.1.0",
+  "description": "The Fast and Furious Node Router",
+  "keywords": [
+    "furi",
+    "node",
+    "router",
+    "express"
+  ],
+  "main": "./build/app.js",
+  "scripts": {
+    "prebuild": "rimraf build",
+    "build": "cross-env NODE_ENV=prod webpack --progress --colors --define process.env.NODE_ENV='production'",
+    "build:all": "npm-run-all --parallel build:*",
+    "build:main": "cross-env NODE_ENV=prod webpack --progress --colors",
+    "build:min": "cross-env NODE_ENV=prod webpack --progress --colors",
+    "check": "tslint -c ./tslint.json src/**/*.ts",
+    "dev": "cross-env NODE_ENV=dev webpack --progress --colors --watch",
+    "doc": "typedoc --module commonjs --target ES5 --ignoreCompilerErrors --exclude node_modules --out ./docs/api ./src",
+    "format": "tsfmt -r --baseDir ./ -- ./src/app.ts ./src/furi.ts",
+    "start": "nodemon ./build/app.js",
+    "test": "tape test/**/*.js|tap-summary"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:rajinder_yadav/furi.git"
+  },
+  "author": "Rajinder Yadav <rajinder.yadav@hotmail.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/core-js": "^0.9.43",
+    "@types/node": "^8.0.30",
+    "awesome-typescript-loader": "^3.2.3",
+    "axios": "^0.16.2",
+    "cross-env": "^5.0.5",
+    "cross-var": "^1.0.3",
+    "nodemon": "^1.12.1",
+    "npm-run-all": "^4.1.1",
+    "rimraf": "^2.6.2",
+    "router": "^1.3.2",
+    "tap-summary": "^4.0.0",
+    "tape": "^4.8.0",
+    "tslint": "^5.7.0",
+    "typedoc": "^0.8.0",
+    "typescript": "^2.5.2",
+    "typescript-formatter": "^6.0.0",
+    "webpack": "^3.6.0"
+  },
+  "dependencies": {}
+}
