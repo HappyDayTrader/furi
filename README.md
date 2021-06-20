@@ -1,1 +1,1 @@
-# FURI - Fast Node Engine
+# FURI - Fast Node API Server
